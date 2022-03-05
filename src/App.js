@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import AllMeetupsPage from './pages/AllMeetups';
 import NewMeetupPage from './pages/NewMeetup';
 import FavoritesPage from './pages/Favorites';
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="">
       <MainNavigation />
-      <Switch>
+      <Routes>
         <Route path="/">
           <AllMeetupsPage />
         </Route>
@@ -19,7 +19,7 @@ function App() {
         <Route path="/favorites">
           <FavoritesPage />
         </Route>
-      </Switch>  
+      </Routes>  
     </div>
   );
 }
