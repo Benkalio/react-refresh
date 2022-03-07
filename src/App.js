@@ -3,14 +3,13 @@ import { Route, Routes } from 'react-router-dom';
 import AllMeetupsPage from './pages/AllMeetups';
 import NewMeetupPage from './pages/NewMeetup';
 import FavoritesPage from './pages/Favorites';
-import MainNavigation from './components/Layout/MainNavigation';
+import Layout from './components/Layout/Layout';
 
 function App() {
   return (
-    <div className="">
-      <MainNavigation />
+    <Layout className="">
       <Routes>
-        <Route path="/">
+        <Route path="/" exact>
           <AllMeetupsPage />
         </Route>
         <Route path="/new-meetup">
@@ -20,7 +19,7 @@ function App() {
           <FavoritesPage />
         </Route>
       </Routes>  
-    </div>
+    </Layout>
   );
 }
 
