@@ -9,15 +9,9 @@ function App() {
   return (
     <Layout className="">
       <Routes>
-        <Route path="/" exact>
-          <AllMeetupsPage />
-        </Route>
-        <Route path="/new-meetup">
-          <NewMeetupPage />
-        </Route>
-        <Route path="/favorites">
-          <FavoritesPage />
-        </Route>
+        <Route path="/" exact component={AllMeetupsPage} />
+        <Route path="/new-meetup" component={NewMeetupPage} />
+        <Route path="/favorites" component={FavoritesPage} />
       </Routes>  
     </Layout>
   );
