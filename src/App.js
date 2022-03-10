@@ -7,7 +7,7 @@ import Layout from './components/Layout/Layout';
 
 function App() {
   return (
-    <Layout className="">
+    <Layout>
       <Routes>
         <Route path="/" exact component={AllMeetupsPage} />
         <Route path="/new-meetup" component={NewMeetupPage} />
