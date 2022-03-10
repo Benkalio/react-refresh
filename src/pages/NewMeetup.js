@@ -5,7 +5,7 @@ import NewMeetupForm from "../components/meetups/NewMeetupForm";
 function NewMeetupPage() {
     const history = useNavigate();
 
-    function addMeetupHander(meetupData) {
+    function addMeetupHandler(meetupData) {
         fetch(
             'https://react-checker-default-rtdb.firebaseio.com/meetups.json',
             {
@@ -22,7 +22,7 @@ function NewMeetupPage() {
     return (
         <section>
             <h1>New Meetup</h1>
-            <NewMeetupForm />
+            <NewMeetupForm onAddMeetup={addMeetupHandler} />
         </section>
     )
 }

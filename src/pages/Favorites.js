@@ -1,7 +1,8 @@
 import { useContext } from 'react';
-import MeetupList from '../components/meetups/MeetupList';
 
 import FavoritesContext from '../store/favorites-context';
+import MeetupList from '../components/meetups/MeetupList';
+
 
 function FavoritesPage() {
     const favoriteCtx = useContext(FavoritesContext);
@@ -17,7 +18,6 @@ function FavoritesPage() {
     return (
         <section>
             <h1>Favorites</h1>
-            {/* <MeetupList meetups={favoriteCtx.favorites} /> */}
             {content}
         </section>
     )
